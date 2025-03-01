@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login & Register</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="left-area">
+        <div class="link">
+          <a href="#login" class="active" onclick="toggleForm('login')">Login</a>
+          <a href="#register" onclick="toggleForm('register')">Register</a>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form" id="login-form">
+          <div class="form-top">
+            <h1>Login Form</h1>
+          </div>
+          <form id="loginForm">
+            <div class="input-area">
+              <input id="login-email" type="email" placeholder="xyz@example.com" required />
+              <span>Email</span>
+            </div>
+            <div class="input-area">
+              <input id="login-password" type="password" placeholder="Enter your password" required />
+              <span>Password</span>
+            </div>
+            <div class="form-bottom">
+              <div class="checkbox">
+                <label class="checkbox-container">
+                  <input type="checkbox" checked />
+                  <div class="custom-checkbox"></div>
+                  Remember me
+                </label>
+              </div>
+              <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form" id="register-form" style="display: none;">
+          <div class="form-top">
+            <h1>Register Form</h1>
+          </div>
+          <form id="registerForm">
+            <div class="input-area">
+              <input id="register-name" type="text" placeholder="Full Name" required />
+              <span>Full Name</span>
+            </div>
+            <div class="input-area">
+              <input id="register-email" type="email" placeholder="xyz@example.com" required />
+              <span>Email</span>
+            </div>
+            <div class="input-area">
+              <input id="register-password" type="password" placeholder="Create a password" required />
+              <span>Password</span>
+            </div>
+            <div class="input-area">
+              <input id="register-confirm-password" type="password" placeholder="Confirm password" required />
+              <span>Confirm Password</span>
+            </div>
+            <button type="submit" class="login-btn">Register</button>
+          </form>
+        </div>
+
+        <!-- Social Media Login -->
+        <div class="social">
+          <p>Login with</p>
+          <div class="social-media">
+            <div class="social-icon">
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Area -->
+      <div class="right-area">
+        <div class="welcome">
+          <div class="welcome-text">
+            <h2>Welcome</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
